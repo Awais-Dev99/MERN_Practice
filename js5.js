@@ -31,31 +31,54 @@ function reset(){
     updatecount();
 }
 
-const form=document.getElementById("student")
+// const form=document.getElementById("student")
 
-const students=[];
-form.addEventListener('submit',function(event){
+// const students=[];
+// form.addEventListener('submit',function(event){
 
-    event.preventDefault();
-   const name= document.getElementById('name').value;
-   const fatherName= document.getElementById('fatherName').value;
-   const course= document.getElementById('course').value;
-   const semester= document.getElementById('semester').value;
-const studentsdata={
-    name: name,
-    fatherName: fatherName,
-    course: course,
-    semester: semester
+//     event.preventDefault();
+//    const name= document.getElementById('name').value;
+//    const fatherName= document.getElementById('fatherName').value;
+//    const course= document.getElementById('course').value;
+//    const semester= document.getElementById('semester').value;
+// const studentsdata={
+//     name: name,
+//     fatherName: fatherName,
+//     course: course,
+//     semester: semester
 
-}
-students.push(studentsdata);
+// }
+// students.push(studentsdata);
 
-console.log("All students Data");
-   console.log(students);
+// console.log("All students Data");
+//    console.log(students);
 //    console.log("Name  ",name);
 //    console.log("FatherName  ",fatherName);
 //    console.log("Course  ",course);
 //    console.log("Semester   ",semester);
+//})
+
+
+const form=document.getElementById("student")
+const data=[]
+
+form.addEventListener('submit',function(event){
+event.preventDefault();
+const name=document.getElementById('name').value;
+const fatherName=document.getElementById('fatherName').value;
+const course=document.getElementById('course').value;
+const semester=document.getElementById('semester').value;
+
+const get={
+    name:name,
+    fatherName:fatherName,
+    course:course,
+    semester:semester
+}
+data.push(get)
+//alert()
+console.log(data);
+
 })
 
 
