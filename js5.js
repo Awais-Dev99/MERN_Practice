@@ -1,6 +1,6 @@
 let main={
-    name:"Ali",
-    fatherName:"Ahmad",
+    name:"khan",
+    fatherName:"raza",
     age:20
 }
 
