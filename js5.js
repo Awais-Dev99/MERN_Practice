@@ -1,7 +1,7 @@
 let main={
     name:"khan",
     fatherName:"raza",
-    age:20
+    age:30
 }
 
 
