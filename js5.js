@@ -76,7 +76,11 @@ const get={
     semester:semester
 }
 data.push(get)
-//alert()
+
+const message=
+    "Student Name: "+name+"\n"+"Father Name: "+fatherName+"\n"+"Course: "+course+"\n"+"Semester: "+semester;
+
+alert(message)
 console.log(data);
 
 })
