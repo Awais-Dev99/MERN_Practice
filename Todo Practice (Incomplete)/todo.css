@@ -15,7 +15,6 @@ width: 500px;
     margin: 5px 5px ;
     background-color: #9aede2;
     height: 130px;
-    background-color: ;
     border-radius: 20px ;
     border: 2px solid wheat;
     justify-items: center;
@@ -61,4 +60,9 @@ border-radius: 20px;
 .main-div ul li span:hover{
     cursor: pointer;
     background-color: #9aede2;    
+}
+
+ul li.checked{
+    color: #555;
+    text-decoration: line-through;
 }
