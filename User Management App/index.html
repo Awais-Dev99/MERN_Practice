@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>User Management</title>
+<script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100 p-10">
+
+<div class="max-w-6xl mx-auto bg-white p-6 rounded shadow">
+
+<h1 class="text-3xl font-bold mb-6 text-center">User Management</h1>
+
+<!-- SEARCH -->
+<input 
+id="searchInput"
+type="text"
+placeholder="Search users..."
+class="border p-2 w-full mb-4 rounded"
+/>
+
+<!-- FORM -->
+<form id="userForm" class="grid grid-cols-2 gap-4 mb-6">
+
+<input id="firstName" placeholder="First Name" class="border p-2 rounded" required>
+<input id="lastName" placeholder="Last Name" class="border p-2 rounded" required>
+<input id="email" placeholder="Email" class="border p-2 rounded" required>
+<input id="phone" placeholder="Phone" class="border p-2 rounded" required>
+
+<button class="col-span-2 bg-blue-500 text-white p-2 rounded">
+Save User
+</button>
+
+</form>
+
+<!-- TABLE -->
+<table class="w-full border">
+
+<thead class="bg-gray-200">
+<tr>
+<th class="p-2 border">ID</th>
+<th class="p-2 border">First Name</th>
+<th class="p-2 border">Last Name</th>
+<th class="p-2 border">Email</th>
+<th class="p-2 border">Phone</th>
+<th class="p-2 border">Actions</th>
+</tr>
+</thead>
+
+<tbody id="userTable"></tbody>
+
+</table>
+
+</div>
+
+<script src="index.js"></script>
+
+</body>
+</html>
