@@ -30,6 +30,11 @@ tr.innerHTML = `
 `;
 
 tableBody.appendChild(tr);
-
+save()
+    
 form.reset();
+}
+
+function save(){
+    localStorage.setItem("todo",tableBody.innerHTML)
 }
